@@ -1,3 +1,4 @@
 # stepic_page_object
 stepic_page_object
-New repositories  for task Page Object
+Stepic Task Page Object
+Page Object directiry pages class init ver 1.1.1
