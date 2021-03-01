@@ -47,3 +47,12 @@ class ProductPage(BasePage):
         prod_name=prod_name_el.text
         print(prod_name)
         return prod_name   
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, but should not be"
+    def should_cant_see_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), "Product form is not presented"
+    def should_message_disappeared(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), "Product form is not disappeared"
+ 
+   
