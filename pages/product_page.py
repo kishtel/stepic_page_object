@@ -14,7 +14,10 @@ class ProductPage(BasePage):
          link = self.browser.find_element(*ProductPageLocators.BUTTON_SUBMIT)
          link.click()
          self.solve_quiz_and_get_code()
-
+    def go_to_product_page_user(self):
+         link = self.browser.find_element(*ProductPageLocators.BUTTON_SUBMIT)
+         link.click()
+   
     def should_be_product_url(self):
         url=self.browser.current_url
         index = url.find("/?promo=newYear")

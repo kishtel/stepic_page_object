@@ -7,6 +7,10 @@ class MainPageLocators():
 class LoginPageLocators():
     LOGIN_FORM=(By.ID,"login_form")
     LOOGIN_REGISTER_FORM=(By.ID,"register_form")
+    LOGIN_EMAIL=(By.ID,"id_registration-email")
+    LOGIN_PASSWORD=(By.ID,"id_registration-password1")
+    LOGIN_CONFIRM=(By.ID,"id_registration-password2")
+    BUTTON_REGOSTRATION=(By.XPATH,"//button[@name='registration_submit']")
 class ProductPageLocators():
     BUTTON_SUBMIT= (By.CSS_SELECTOR,".btn.btn-lg.btn-primary.btn-add-to-basket")
     BUTTON_REVIEW=(By.ID,"write_review")
@@ -20,3 +24,8 @@ class ProductPageLocators():
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    BUTTON_BASKET=(By.CSS_SELECTOR,".btn-group a")  
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
+class BasketPageLocators():
+    MESSAGE_EMPTY_BASKET=(By.XPATH,"//div[@id='content_inner']/p")
+       
